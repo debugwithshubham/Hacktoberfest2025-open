@@ -1,0 +1,34 @@
+#include <iostream> // For input/output operations (cout, cin)
+#include <vector>   // For using std::vector to store numbers
+#include <numeric>  // For std::accumulate (optional, for a more concise sum)
+
+// calculating the average
+
+int main() {
+    int numCount;
+    std::cout << "Enter the number of elements: ";
+    std::cin >> numCount;
+
+    // Input validation: Ensure a positive number of elements
+    if (numCount <= 0) {
+        std::cout << "Number of elements must be positive." << std::endl;
+        return 1; // Indicate an error
+    }
+
+    std::vector<double> numbers(numCount); // Create a vector to hold the numbers
+    double sum = 0.0; // Initialize sum to 0.0 for accurate double calculation
+
+    std::cout << "Enter " << numCount << " numbers:" << std::endl;
+    for (int i = 0; i < numCount; ++i) {
+        std::cout << "Enter number " << (i + 1) << ": ";
+        std::cin >> numbers[i];
+        sum += numbers[i]; // Add each number to the sum
+    }
+
+    // Calculate the average
+    double average = sum / numCount;
+
+    std::cout << "The average of the numbers is: " << average << std::endl;
+
+    return 0; // Indicate successful execution
+}
