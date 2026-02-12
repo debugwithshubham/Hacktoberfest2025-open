@@ -1,0 +1,8 @@
+# Define a string with lowercase characters
+my_string = "hello world"
+
+# Convert the string to uppercase using the upper() method
+uppercase_string = my_string.upper()
+
+# Print the resulting uppercase string
+print(uppercase_string)
