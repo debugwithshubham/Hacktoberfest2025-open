@@ -1,0 +1,12 @@
+
+import math
+
+number = 25
+square_root = math.sqrt(number)
+print(f"The square root of {number} is {square_root}")
+
+negative_number = -9
+try:
+    math.sqrt(negative_number)
+except ValueError as e:
+    print(f"Error: {e} when trying to find square root of a negative number with math.sqrt()")
