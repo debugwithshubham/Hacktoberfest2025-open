@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int A = 10;
+    int B = 5;
+
+    // First find the sum of two numbers
+    int sum = (A + B);
+
+    // Then divide the sum by 2 to get the average
+    double average = sum / 2.0;
+    cout << "Average of " << A << " and " << B << " = "
+        << average << endl;
+}
