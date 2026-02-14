@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cctype> // For tolower()
+
+bool isVowel(char ch) {
+    // Convert the character to lowercase to handle both cases easily
+    ch = std::tolower(ch); 
+
+    switch (ch) {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+            return true; // It's a vowel
+        default:
+            return false; // It's not a vowel
+    }
+}
+
+int main() {
+    char testChar;
+
+    std::cout << "Enter a character: ";
+    std::cin >> testChar;
+
+    if (isVowel(testChar)) {
+        std::cout << testChar << " is a vowel." << std::endl;
+    } else {
+        std::cout << testChar << " is not a vowel." << std::endl;
+    }
+
+    return 0;
+}
