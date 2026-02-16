@@ -1,0 +1,26 @@
+public class SquareRootCalculator {
+    public static void main(String[] args) {
+        // Calculate the square root of a double
+        double number1 = 25.0;
+        double squareRoot1 = Math.sqrt(number1);
+        System.out.println("Square root of " + number1 + " is: " + squareRoot1); // Output: 5.0
+
+        // Calculate the square root of an integer and cast to int
+        int number2 = 64;
+        int squareRoot2 = (int) Math.sqrt(number2);
+        System.out.println("Square root of " + number2 + " is: " + squareRoot2); // Output: 8
+
+        // Handle special cases
+        double negativeNumber = -16.0;
+        double squareRootNegative = Math.sqrt(negativeNumber);
+        System.out.println("Square root of " + negativeNumber + " is: " + squareRootNegative); // Output: NaN
+
+        double zero = 0.0;
+        double squareRootZero = Math.sqrt(zero);
+        System.out.println("Square root of " + zero + " is: " + squareRootZero); // Output: 0.0
+
+        double positiveInfinity = Double.POSITIVE_INFINITY;
+        double squareRootInfinity = Math.sqrt(positiveInfinity);
+        System.out.println("Square root of " + positiveInfinity + " is: " + squareRootInfinity); // Output: Infinity
+    }
+}
